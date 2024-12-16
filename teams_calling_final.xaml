@@ -1,0 +1,449 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="teams_calling_final" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="teams_calling_final_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftTeams.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="teams_calling_final" sap:VirtualizedContainerService.HintSize="1560,4500" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Chat  CBS Workforce  Microsoft Teams" sap:VirtualizedContainerService.HintSize="1560,4477.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="06739bd5-0034-4e51-b374-5b4540551992" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1526,4235.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CBS Workforce'" sap:VirtualizedContainerService.HintSize="1492,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06739bd5-0034-4e51-b374-5b4540551992" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="teams.microsoft.com/v2" CVScreenId="d7d81731-eba6-4ac2-b684-5f5dd1a410ef" ContentHash="htUIcLCPAEq71dy7amAcCQ" CvTextArea="213, 495, 141, 19" CvTextArgument="CBS Workforce" CvType="Text" DesignTimeRectangle="216, 489, 223, 30" DesignTimeScaleFactor="1.5" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-label='CBS Workforce' tag='SPAN' type='' class='chatListItem_mainMedia_header ___1nxzjof fzf7ria fdyaxyw foq84dw f15ezbq4 fz5stix f1a3p1vp f1cmbuwj fkfq4zb fses1vf f1n95isl' aaname='CBS Workforce' check:innerText='CBS Workforce' /&gt;" Guid="cc8fda77-6747-4c64-853a-ffac574088e5" InformativeScreenshot="726db5f16bff13795b75183c3989f33f.png" Reference="vpZdhn5lxE2gVPjQ7S4Ddg/9gOX3RyQ5E-XGVDF8BRKQw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Chat | CBS Workforce | Microsoft Teams' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="d7d81731-eba6-4ac2-b684-5f5dd1a410ef" CvTextArea="146, 296, 63, 24" CvTextArgument="Chat" CvType="Text" DesignTimeRectangle="149, 287, 58, 39" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Chat' parentid='app' tag='SPAN' type='' class='fui-StyledText ___91ms1n0 f1leeax8 f1fjxbv2' check:innerText='Chat' /&gt;" Guid="771e4bf1-e08a-4251-aa01-83d139547a19" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Meet now'" sap:VirtualizedContainerService.HintSize="1492,228" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06739bd5-0034-4e51-b374-5b4540551992" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="teams.microsoft.com/v2" CVScreenId="f0078b3f-839d-4582-925e-fbb62b6d38c8" ContentHash="5ZWddu8cj0uMxUBNVOIyHQ" CvElementArea="1690, 227, 27, 25" CvType="ArrowButton" DesignTimeRectangle="1695, 231, 18, 18" DesignTimeScaleFactor="1.5" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl parentid='menur283' tag='svg' type='' class='___12fm75w f1w7gpdv fez10in fg4l7m0' aaname='' /&gt;" Guid="8878cb97-0bfe-44cc-a211-d1809576b2b2" InformativeScreenshot="4bd159c1fa983521258669a4806573e5.png" Reference="vpZdhn5lxE2gVPjQ7S4Ddg/5oNCXKJELkmzkGQJuhM29g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Chat | CBS Workforce | Microsoft Teams' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f0078b3f-839d-4582-925e-fbb62b6d38c8" CvTextArea="1580, 230, 99, 19" CvTextArgument="Meet now" CvType="Text" DesignTimeRectangle="1581, 224, 96, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Meet now' tag='SPAN' type='' class='fui-StyledText ___1s8r2ua fkhj508 f1i3iumi fl43uef f1ahpp82 fnwyq0v f53rfo1 ffa5dzm' check:innerText='Meet now' /&gt;" Guid="a890ac54-a26a-4619-97d5-60616d1ca426" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Meet now'" sap:VirtualizedContainerService.HintSize="1492,228" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06739bd5-0034-4e51-b374-5b4540551992" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="teams.microsoft.com/v2" CVScreenId="b6acc95e-729d-4997-b432-2f501b2e8e35" ContentHash="9Qy0tbq_806IS860XOD-Kg" CvElementArea="1518, 316, 201, 57" CvTextArea="1568, 335, 94, 21" CvTextArgument="Audio call" CvType="Button" DesignTimeRectangle="1522, 321, 193, 48" DesignTimeScaleFactor="1.5" FuzzySelectorArgument="&lt;webctrl aria-role='menuitem' type='' tag='DIV' class='fui-MenuItem r11normc' aaname='' check:innerText='Audio call' /&gt;" Guid="d7f6f2c5-225d-475b-ba1d-dbcb6256ec6d" InformativeScreenshot="0b6a67d8b9a6a8001db236265a1d25ab.png" Reference="vpZdhn5lxE2gVPjQ7S4Ddg/lIooCr5yfUu8F8SCmbzV5g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='(2) Chat | CBS Workforce | Microsoft Teams' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="b6acc95e-729d-4997-b432-2f501b2e8e35" CvElementArea="1518, 316, 201, 57" CvTextArea="1568, 335, 94, 21" CvTextArgument="Audio call" CvType="Button" DesignTimeRectangle="1567, 330, 139, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Audio call' tag='SPAN' type='' class='fui-MenuItem__content r1ls86vo' check:innerText='Audio call' /&gt;" Guid="461485df-01d4-4086-b976-ac446b40969a" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Confirm'" sap:VirtualizedContainerService.HintSize="1492,228" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06739bd5-0034-4e51-b374-5b4540551992" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="teams.microsoft.com/v2" CVScreenId="5825f36b-a85a-4d2c-87fa-a97fcc1529a7" ContentHash="Ho_jAcyj8kmlomNaTe8Tfw" CvElementArea="1236, 634, 150, 52" CvTextArea="1271, 651, 81, 21" CvTextArgument="Confirm" CvType="Button" DesignTimeRectangle="1240, 637, 144, 47" DesignTimeScaleFactor="1.5" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname=' Confirm ' tag='BUTTON' type='button' class='fui-Button r1alrhcs ___1akj6hk ffp7eso f1p3nwhy f11589ue f1q5o8ev f1pdflbu f1phragk f15wkkf3 f1s2uweq fr80ssc f1ukrpxl fecsdlb f1rq72xc fnp9lpt f1h0usnq fs4ktlq f16h9ulv fx2bmrt f1d6v5y2 f1rirnrt f1uu00uk fkvaka8 f1ux7til f9a0qzu f1lkg8j3 fkc42ay fq7113v ff1wgvm fiob0tu f1j6scgf f1x4h75k f4xjyn1 fbgcvur f1ks1yx8 f1o6qegi fcnxywj fmxjhhp f9ddjv3 f17t0x8g f194v5ow f1qgg65p fk7jm04 fhgccpy f32wu9k fu5nqqq f13prjl2 f1czftr5 f1nl83rv f12k37oa fr96u23' check:innerText='Confirm' /&gt;" Guid="cae8abc1-d61e-4a6b-8d8b-cec31f112fa8" InformativeScreenshot="e026572ba4d560b1d7caabcb1630119c.png" Reference="vpZdhn5lxE2gVPjQ7S4Ddg/LISF4_A_fkSDx4MZdYUPuQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='(2) Chat | CBS Workforce | Microsoft Teams' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="5825f36b-a85a-4d2c-87fa-a97fcc1529a7" CvElementArea="1236, 634, 150, 52" CvTextArea="1271, 651, 81, 21" CvTextArgument="Confirm" CvType="Button" DesignTimeRectangle="1274, 646, 76, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' Confirm ' class='fui-StyledText' tag='SPAN' type='' check:innerText='Confirm' /&gt;" Guid="5ed8aea5-9541-4a3e-8864-1af6630ddfbd" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State 'Waiting for others to j…'" sap:VirtualizedContainerService.HintSize="1492,3259.3333333333335" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="06739bd5-0034-4e51-b374-5b4540551992" Version="V4">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="988,3014" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Delay Duration="00:00:20" sap:VirtualizedContainerService.HintSize="954,123.33333333333333" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Leave'" sap:VirtualizedContainerService.HintSize="954,228" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06739bd5-0034-4e51-b374-5b4540551992" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="teams.microsoft.com/v2" CVScreenId="6f52b297-58d5-4a87-b47e-97cd9a79e0c8" ContentHash="PVVb05YtoESFfzv7AlieZg" CvTextArea="1772, 230, 57, 19" CvTextArgument="Leave" CvType="Text" DesignTimeRectangle="1710, 203, 137, 72" DesignTimeScaleFactor="1.5" FuzzySelectorArgument="&lt;webctrl id='hangup-button' tag='DIV' type='' class='fui-Primitive ___sf65sf0 f22iagw f1l02sjl f122n59 f3rmtva f4d9j23 f1mk8lai f3bhgqh' aaname='' check:innerText='Leave' /&gt;" Guid="a9a89d2f-980d-4761-aaaf-69560b7d156a" InformativeScreenshot="2ac3f477347e4f392883dd484d75b7b6.png" Reference="vpZdhn5lxE2gVPjQ7S4Ddg/zHFwefbuTEG2zBos7I1_FA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='(1) Chat | Meeting in CBS Workforce | Microsoft Teams' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CBS Workforce(1)'" sap:VirtualizedContainerService.HintSize="954,228" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06739bd5-0034-4e51-b374-5b4540551992" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="teams.microsoft.com/v2" CVScreenId="6f9ac7e7-378b-4e51-9dcb-446b9dd4c484" ContentHash="IxDMS2riwUmu3dU0LDXuBQ" CvTextArea="215, 500, 202, 19" CvType="AnyWordGroup" DesignTimeRectangle="216, 494, 213, 30" DesignTimeScaleFactor="1.5" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-label='RPA GROUP 2ND Test' tag='SPAN' type='' class='chatListItem_mainMedia_header ___1nxzjof fzf7ria fdyaxyw foq84dw f15ezbq4 fz5stix f1a3p1vp f1cmbuwj fkfq4zb fses1vf f1n95isl' /&gt;" Guid="0667d250-d082-4a8e-bb56-77295eb7e84c" InformativeScreenshot="50672e6cd5c3d2db8d07be60871b4d0c.png" Reference="vpZdhn5lxE2gVPjQ7S4Ddg/6xI7fiZAA0aW0-P12BWyYQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='(1) Chat | CBS Workforce | Microsoft Teams' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Meet now'" sap:VirtualizedContainerService.HintSize="954,228" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06739bd5-0034-4e51-b374-5b4540551992" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="teams.microsoft.com/v2" CVScreenId="f0078b3f-839d-4582-925e-fbb62b6d38c8" ContentHash="5ZWddu8cj0uMxUBNVOIyHQ" CvElementArea="1690, 227, 27, 25" CvType="ArrowButton" DesignTimeRectangle="1695, 231, 18, 18" DesignTimeScaleFactor="1.5" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl parentid='menur283' tag='svg' type='' class='___12fm75w f1w7gpdv fez10in fg4l7m0' aaname='' /&gt;" Guid="8878cb97-0bfe-44cc-a211-d1809576b2b2" InformativeScreenshot="4bd159c1fa983521258669a4806573e5.png" Reference="vpZdhn5lxE2gVPjQ7S4Ddg/5oNCXKJELkmzkGQJuhM29g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Chat | CBS Workforce | Microsoft Teams' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="f0078b3f-839d-4582-925e-fbb62b6d38c8" CvTextArea="1580, 230, 99, 19" CvTextArgument="Meet now" CvType="Text" DesignTimeRectangle="1581, 224, 96, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Meet now' tag='SPAN' type='' class='fui-StyledText ___1s8r2ua fkhj508 f1i3iumi fl43uef f1ahpp82 fnwyq0v f53rfo1 ffa5dzm' check:innerText='Meet now' /&gt;" Guid="a890ac54-a26a-4619-97d5-60616d1ca426" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Meet now'" sap:VirtualizedContainerService.HintSize="954,228" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06739bd5-0034-4e51-b374-5b4540551992" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="teams.microsoft.com/v2" CVScreenId="b6acc95e-729d-4997-b432-2f501b2e8e35" ContentHash="9Qy0tbq_806IS860XOD-Kg" CvElementArea="1518, 316, 201, 57" CvTextArea="1568, 335, 94, 21" CvTextArgument="Audio call" CvType="Button" DesignTimeRectangle="1522, 321, 193, 48" DesignTimeScaleFactor="1.5" FuzzySelectorArgument="&lt;webctrl aria-role='menuitem' type='' tag='DIV' class='fui-MenuItem r11normc' aaname='' check:innerText='Audio call' /&gt;" Guid="d7f6f2c5-225d-475b-ba1d-dbcb6256ec6d" InformativeScreenshot="0b6a67d8b9a6a8001db236265a1d25ab.png" Reference="vpZdhn5lxE2gVPjQ7S4Ddg/lIooCr5yfUu8F8SCmbzV5g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='(2) Chat | CBS Workforce | Microsoft Teams' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="b6acc95e-729d-4997-b432-2f501b2e8e35" CvElementArea="1518, 316, 201, 57" CvTextArea="1568, 335, 94, 21" CvTextArgument="Audio call" CvType="Button" DesignTimeRectangle="1567, 330, 139, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Audio call' tag='SPAN' type='' class='fui-MenuItem__content r1ls86vo' check:innerText='Audio call' /&gt;" Guid="461485df-01d4-4086-b976-ac446b40969a" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Confirm'" sap:VirtualizedContainerService.HintSize="954,228" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06739bd5-0034-4e51-b374-5b4540551992" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="teams.microsoft.com/v2" CVScreenId="5825f36b-a85a-4d2c-87fa-a97fcc1529a7" ContentHash="Ho_jAcyj8kmlomNaTe8Tfw" CvElementArea="1236, 634, 150, 52" CvTextArea="1271, 651, 81, 21" CvTextArgument="Confirm" CvType="Button" DesignTimeRectangle="1240, 637, 144, 47" DesignTimeScaleFactor="1.5" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname=' Confirm ' tag='BUTTON' type='button' class='fui-Button r1alrhcs ___1akj6hk ffp7eso f1p3nwhy f11589ue f1q5o8ev f1pdflbu f1phragk f15wkkf3 f1s2uweq fr80ssc f1ukrpxl fecsdlb f1rq72xc fnp9lpt f1h0usnq fs4ktlq f16h9ulv fx2bmrt f1d6v5y2 f1rirnrt f1uu00uk fkvaka8 f1ux7til f9a0qzu f1lkg8j3 fkc42ay fq7113v ff1wgvm fiob0tu f1j6scgf f1x4h75k f4xjyn1 fbgcvur f1ks1yx8 f1o6qegi fcnxywj fmxjhhp f9ddjv3 f17t0x8g f194v5ow f1qgg65p fk7jm04 fhgccpy f32wu9k fu5nqqq f13prjl2 f1czftr5 f1nl83rv f12k37oa fr96u23' check:innerText='Confirm' /&gt;" Guid="cae8abc1-d61e-4a6b-8d8b-cec31f112fa8" InformativeScreenshot="e026572ba4d560b1d7caabcb1630119c.png" Reference="vpZdhn5lxE2gVPjQ7S4Ddg/LISF4_A_fkSDx4MZdYUPuQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='(2) Chat | CBS Workforce | Microsoft Teams' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="5825f36b-a85a-4d2c-87fa-a97fcc1529a7" CvElementArea="1236, 634, 150, 52" CvTextArea="1271, 651, 81, 21" CvTextArgument="Confirm" CvType="Button" DesignTimeRectangle="1274, 646, 76, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' Confirm ' class='fui-StyledText' tag='SPAN' type='' check:innerText='Confirm' /&gt;" Guid="5ed8aea5-9541-4a3e-8864-1af6630ddfbd" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NCheckState DisplayName="Check App State 'Waiting for others to j…'" sap:VirtualizedContainerService.HintSize="954,1688" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="06739bd5-0034-4e51-b374-5b4540551992" Version="V4">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,1442.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Delay Duration="00:00:25" sap:VirtualizedContainerService.HintSize="416,123.33333333333333" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Leave(1)'" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06739bd5-0034-4e51-b374-5b4540551992" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="teams.microsoft.com/v2" CVScreenId="ae34a5f6-90e9-48f2-9f2d-96503ec4ea6b" ContentHash="QczkItACWE63qp91oIe_AA" CvElementArea="1708, 211, 190, 53" CvTextArea="1772, 230, 57, 19" CvTextArgument="Leave" CvType="Button" DesignTimeRectangle="1710, 215, 137, 48" DesignTimeScaleFactor="1.5" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Leave (Ctrl+Shift+H)' tag='BUTTON' type='button' class='fui-Button r1alrhcs ___mws80r0 fgfbwa2 f1a3p1vp fz5stix flvyvdh f1s9ku6b f1cmbuwj f1sw78cg f1hoamau fbnecyg f4ejq78 ff9fk16 f10ostut f1krrbdw fdl5y0r f1p3nwhy f1q5o8ev f1pdflbu fonrgv7 ffc4eh f1dagfxt f1vxb9gr fqfqhgf fs6yre7 fug8a2c f27haij f1bbhs8t fylqpix fbb8suj f1doosug f1sa10l8 f5zu2yh' aaname='Leave' check:innerText='Leave' /&gt;" Guid="d85e22d5-481c-4ac5-90cb-ed883a391442" InformativeScreenshot="dbcb58948e243b3221f26d20fe2fc0e0.png" Reference="vpZdhn5lxE2gVPjQ7S4Ddg/mY_enz-FvEOwQjdRqYxHfw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='(1) Chat | Meeting in RPA GROUP 2ND Test | Microsoft Teams' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="ae34a5f6-90e9-48f2-9f2d-96503ec4ea6b" CvElementArea="1708, 211, 190, 53" CvTextArea="1772, 230, 57, 19" CvTextArgument="Leave" CvType="Button" DesignTimeRectangle="1774, 224, 54, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Leave' parentid='hangup-button' tag='SPAN' type='' class='fui-StyledText ___1xpe33h f1cmbuwj f1a3p1vp' check:innerText='Leave' /&gt;" Guid="664abb83-2298-4236-a71d-596cae73ca38" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sandeep Regmi'" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06739bd5-0034-4e51-b374-5b4540551992" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="teams.microsoft.com/v2" CVScreenId="bab8af1e-356a-499d-83cf-a8376c99f4be" ContentHash="TZqp3JQAgku4UaK-Cr99_w" CvTextArea="213, 621, 147, 26" CvTextArgument="Sandeep Regmi" CvType="Text" DesignTimeRectangle="216, 617, 233, 30" DesignTimeScaleFactor="1.5" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-label='Sandeep Regmi' tag='SPAN' type='' class='chatListItem_mainMedia_header ___1nxzjof fzf7ria fdyaxyw foq84dw f15ezbq4 fz5stix f1a3p1vp f1cmbuwj fkfq4zb fses1vf f1n95isl' aaname='Sandeep Regmi' check:innerText='Sandeep Regmi' /&gt;" Guid="89c2a1df-70fa-402a-b377-5b7a4bfd5008" InformativeScreenshot="dcbaea0a539fb27dcf25159426b1c30f.png" Reference="vpZdhn5lxE2gVPjQ7S4Ddg/vaAbs9m62U2gmCgsfNbR5A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Chat | Sameep Shakya | Microsoft Teams' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON menurk5'" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06739bd5-0034-4e51-b374-5b4540551992" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="teams.microsoft.com/v2" CVScreenId="00adb9b8-eb1a-4ef9-b857-fb869eebed13" ContentHash="kEBOhKuqb0eq5z3qegIw8w" CvElementArea="1677, 278, 30, 26" CvType="ArrowButton" DesignTimeRectangle="1675, 267, 36, 47" DesignTimeScaleFactor="1.5" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='menurk5' tag='BUTTON' type='button' class='fui-Button r1alrhcs fui-MenuButton ___1u2ethm f1c21dwh f1p3nwhy f11589ue f1q5o8ev f1pdflbu fkfq4zb f11oyicx f1s2uweq fr80ssc f1ukrpxl fecsdlb f139oj5f ft1hn21 fuxngvv fwiml72 f1h0usnq fs4ktlq f16h9ulv fx2bmrt f1fg1p5m f1dfjoow f1j98vj9 f1tme0vf f4xjyn1 f18onu3q f9ddjv3 f17fgpbq f1hbd1aw ft85np5 fod5ikn fl43uef faaz57k f1b6alqh fjy1crr fq4mcun f1p1ovsp fb40n2d fff0cuw' aaname='' /&gt;" Guid="4d4a66c5-fcaa-4012-8468-8f0dbb160d00" InformativeScreenshot="6d495d6a5dac6d5304b9bd69e66e04ec.png" Reference="vpZdhn5lxE2gVPjQ7S4Ddg/H6lJGYv9nUa9yi08Eqjntw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Chat | Sandeep Regmi | Microsoft Teams' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Audio call'" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06739bd5-0034-4e51-b374-5b4540551992" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="teams.microsoft.com/v2" CVScreenId="05576bcf-4230-4337-b51d-4bab83d6193c" ContentHash="tnuJHUOvpUOHcMTkX2DiQQ" CvTextArea="1556, 386, 95, 21" CvTextArgument="Audio call" CvType="Text" DesignTimeRectangle="1511, 372, 193, 48" DesignTimeScaleFactor="1.5" FuzzySelectorArgument="&lt;webctrl aria-label='Audio call' aria-role='menuitem' tag='DIV' type='' class='fui-MenuItem r11normc' aaname='' check:innerText='Audio call' /&gt;" Guid="0ff2cbf7-f5b8-4174-bb77-1a47494f592c" InformativeScreenshot="89e030b3e1f3037a387960eecf55d6ea.png" Reference="vpZdhn5lxE2gVPjQ7S4Ddg/AG6a0jq6HUu6WRznftohdg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Chat | Sandeep Regmi | Microsoft Teams' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="05576bcf-4230-4337-b51d-4bab83d6193c" CvTextArea="1556, 386, 95, 21" CvTextArgument="Audio call" CvType="Text" DesignTimeRectangle="1556, 381, 139, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Audio call' tag='SPAN' type='' class='fui-MenuItem__content r1ls86vo' check:innerText='Audio call' /&gt;" Guid="30843b5c-5e32-4bdf-8146-93551fe85f94" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                        <Delay Duration="00:00:20" sap:VirtualizedContainerService.HintSize="416,123.33333333333333" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Leave(1)'" sap:VirtualizedContainerService.HintSize="416,221.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06739bd5-0034-4e51-b374-5b4540551992" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="teams.microsoft.com/v2" CVScreenId="ae34a5f6-90e9-48f2-9f2d-96503ec4ea6b" ContentHash="QczkItACWE63qp91oIe_AA" CvElementArea="1708, 211, 190, 53" CvTextArea="1772, 230, 57, 19" CvTextArgument="Leave" CvType="Button" DesignTimeRectangle="1710, 215, 137, 48" DesignTimeScaleFactor="1.5" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Leave (Ctrl+Shift+H)' tag='BUTTON' type='button' class='fui-Button r1alrhcs ___mws80r0 fgfbwa2 f1a3p1vp fz5stix flvyvdh f1s9ku6b f1cmbuwj f1sw78cg f1hoamau fbnecyg f4ejq78 ff9fk16 f10ostut f1krrbdw fdl5y0r f1p3nwhy f1q5o8ev f1pdflbu fonrgv7 ffc4eh f1dagfxt f1vxb9gr fqfqhgf fs6yre7 fug8a2c f27haij f1bbhs8t fylqpix fbb8suj f1doosug f1sa10l8 f5zu2yh' aaname='Leave' check:innerText='Leave' /&gt;" Guid="d85e22d5-481c-4ac5-90cb-ed883a391442" InformativeScreenshot="dbcb58948e243b3221f26d20fe2fc0e0.png" Reference="vpZdhn5lxE2gVPjQ7S4Ddg/mY_enz-FvEOwQjdRqYxHfw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='(1) Chat | Meeting in RPA GROUP 2ND Test | Microsoft Teams' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="ae34a5f6-90e9-48f2-9f2d-96503ec4ea6b" CvElementArea="1708, 211, 190, 53" CvTextArea="1772, 230, 57, 19" CvTextArgument="Leave" CvType="Button" DesignTimeRectangle="1774, 224, 54, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Leave' parentid='hangup-button' tag='SPAN' type='' class='fui-StyledText ___1xpe33h f1cmbuwj f1a3p1vp' check:innerText='Leave' /&gt;" Guid="664abb83-2298-4236-a71d-596cae73ca38" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,111.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Exceptional Handing part 2 , Reserved for SIP Call&quot;]" />
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="teams.microsoft.com/v2" ContentHash="1pnr2nZ6x0iBjeeKZv_gPA" DesignTimeRectangle="1389, 321, 72, 72" DesignTimeScaleFactor="1.5" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='video-button' tag='BUTTON' type='button' class='fui-Button r1alrhcs ___nw58b60 fhovq9v f19n0e5 f1t94bn6 f1s2uweq fr80ssc f1ukrpxl fecsdlb fnwyq0v ft1hn21 fuxngvv fy5bs14 f1k2l7mm f1h0usnq fs4ktlq f16h9ulv fx2bmrt f1omzyqd f1dfjoow f1j98vj9 fj8yq94 f4xjyn1 f1et0tmh f9ddjv3 f1wi8ngl f10pi13n f1gl81tg f1k467in fi4v1pz fvhlxh2 fvsxh9f f1y3vp7e f1iwjod4 f18um0k3 fiy03ts f1ly5f7u f1mdlcz9 f1hmm1st f1q3txrk fyxayw f1msd6ry f11qmguv f1rqtxy5 f1hcleq7 fj41rt3 f1mk8lai f14z66ap f1m00log f1qklnrv f111wci8 f1vx9l62' aaname='Camera' check:innerText='Camera' /&gt;" Guid="2b40c47d-4b5c-456f-ad28-d202376a3618" InformativeScreenshot="ec86a173abedb61031fd435379f70fe5.png" Reference="vpZdhn5lxE2gVPjQ7S4Ddg/UUq3Gx6fVEG1R78NfucI-A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Chat | Call with RPA GROUP 2ND Test | Microsoft Teams' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="1390, 367, 70, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='video-button' tag='P' type='' class='fui-StyledText ___1azuor7 f1a3p1vp f1cmbuwj fz5stix f14d40fx figsok6 fwrc4pm faqd89r fly5x3f' aaname='Camera' check:innerText='Camera' /&gt;" Guid="c93c2ee0-e9ca-4adf-8df5-8d5da158fcbf" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,111.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Exception Handling Part 1 Reserved for SIP Call&quot;]" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="teams.microsoft.com/v2" CVScreenId="93e29c9c-1e55-421b-8717-68159f1a3a72" ContentHash="B5JER5V3i0-okx_iVwZYzw" CvTextArea="1395, 372, 58, 16" CvTextArgument="Camera" CvType="Text" DesignTimeRectangle="1389, 321, 72, 72" DesignTimeScaleFactor="1.5" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='video-button' tag='BUTTON' type='button' class='fui-Button r1alrhcs ___nw58b60 fhovq9v f19n0e5 f1t94bn6 f1s2uweq fr80ssc f1ukrpxl fecsdlb fnwyq0v ft1hn21 fuxngvv fy5bs14 f1k2l7mm f1h0usnq fs4ktlq f16h9ulv fx2bmrt f1omzyqd f1dfjoow f1j98vj9 fj8yq94 f4xjyn1 f1et0tmh f9ddjv3 f1wi8ngl f10pi13n f1gl81tg f1k467in fi4v1pz fvhlxh2 fvsxh9f f1y3vp7e f1iwjod4 f18um0k3 fiy03ts f1ly5f7u f1mdlcz9 f1hmm1st f1q3txrk fyxayw f1msd6ry f11qmguv f1rqtxy5 f1hcleq7 fj41rt3 f1mk8lai f14z66ap f1m00log f1qklnrv f111wci8 f1vx9l62' aaname='Camera' check:innerText='Camera' /&gt;" Guid="d780c2fa-5630-4e40-97cd-104f39907070" InformativeScreenshot="ccd8cac559ffa74c6db512c2dee6be78.png" Reference="vpZdhn5lxE2gVPjQ7S4Ddg/CPBcClCMbEyV_o1ZmVKlIw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Chat | Call with CBS Workforce | Microsoft Teams' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="93e29c9c-1e55-421b-8717-68159f1a3a72" CvTextArea="1395, 372, 58, 16" CvTextArgument="Camera" CvType="Text" DesignTimeRectangle="1390, 367, 70, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='video-button' tag='P' type='' class='fui-StyledText ___1azuor7 f1a3p1vp f1cmbuwj fz5stix f14d40fx figsok6 fwrc4pm faqd89r fly5x3f' aaname='Camera' check:innerText='Camera' /&gt;" Guid="8703e055-3773-4e6f-9e01-ec80a6bbb15d" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1150" BrowserType="Edge" ContentHash="Y3l4f4ynS0-c1OxMB0JHyg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADDSURBVDhPY8AFqptfCwDxfiD+D8UgtgBUmjBA0ww3JCDyZAMQ/4fiBqhyTIBFMxiHxp2FaQZjBu/gPe+B+D8+7Be2H24AsmaYAVg1oWNr+0KQAZheQFaEDcDkzK0ysQcisgEwjKwRhoEGgL1Q0fAS2QvvSTYAPRyGqwHYMD4DCCYkr8DtuAzoh0YmAgAVrgcpRseR8avAmouqntwHagQnKKgWVABUpADE72G2oWGQuAJUKW4AUgTE66GaYBjER9PMwAAA5/8JK2acJ6cAAAAASUVORK5CYII=" InformativeScreenshot="71244e29adaa691478eb10db5bc2c103.jpg" Reference="vpZdhn5lxE2gVPjQ7S4Ddg/661fNgMYoUix3yYYW3xyUA" Selector="&lt;html app='msedge.exe' title='Chat | CBS Workforce | Microsoft Teams' /&gt;" Title="Chat | CBS Workforce | Microsoft Teams" Url="https://teams.microsoft.com/v2/" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
